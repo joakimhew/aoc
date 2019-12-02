@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y \
 COPY . .
 
 #compile the code
-RUN cobc -x -free -o part1 part1.cbl
+RUN cobc -x -free -o program program.cbl
 
 #run
-CMD ["/part1"]
+CMD ["/program"]
